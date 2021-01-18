@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		04741CA225B5C5A900623D0C /* H4X0R_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CA125B5C5A900623D0C /* H4X0R_NewsApp.swift */; };
-		04741CA425B5C5A900623D0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CA325B5C5A900623D0C /* ContentView.swift */; };
 		04741CA625B5C5AA00623D0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04741CA525B5C5AA00623D0C /* Assets.xcassets */; };
 		04741CA925B5C5AA00623D0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04741CA825B5C5AA00623D0C /* Preview Assets.xcassets */; };
+		04741CBA25B5C62F00623D0C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CB425B5C62F00623D0C /* NetworkManager.swift */; };
+		04741CBB25B5C62F00623D0C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CB525B5C62F00623D0C /* PostData.swift */; };
+		04741CBC25B5C62F00623D0C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CB725B5C62F00623D0C /* DetailView.swift */; };
+		04741CBD25B5C62F00623D0C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CB825B5C62F00623D0C /* WebView.swift */; };
+		04741CBE25B5C62F00623D0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04741CB925B5C62F00623D0C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04741C9E25B5C5A900623D0C /* H4X0R News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H4X0R News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04741CA125B5C5A900623D0C /* H4X0R_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4X0R_NewsApp.swift; sourceTree = "<group>"; };
-		04741CA325B5C5A900623D0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04741CA525B5C5AA00623D0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04741CA825B5C5AA00623D0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04741CAA25B5C5AA00623D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04741CB425B5C62F00623D0C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04741CB525B5C62F00623D0C /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		04741CB725B5C62F00623D0C /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04741CB825B5C62F00623D0C /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		04741CB925B5C62F00623D0C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,9 @@
 		04741CA025B5C5A900623D0C /* H4X0R News */ = {
 			isa = PBXGroup;
 			children = (
+				04741CB325B5C62F00623D0C /* Models */,
+				04741CB625B5C62F00623D0C /* Views */,
 				04741CA125B5C5A900623D0C /* H4X0R_NewsApp.swift */,
-				04741CA325B5C5A900623D0C /* ContentView.swift */,
 				04741CA525B5C5AA00623D0C /* Assets.xcassets */,
 				04741CAA25B5C5AA00623D0C /* Info.plist */,
 				04741CA725B5C5AA00623D0C /* Preview Content */,
@@ -67,6 +76,25 @@
 				04741CA825B5C5AA00623D0C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04741CB325B5C62F00623D0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04741CB425B5C62F00623D0C /* NetworkManager.swift */,
+				04741CB525B5C62F00623D0C /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04741CB625B5C62F00623D0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04741CB725B5C62F00623D0C /* DetailView.swift */,
+				04741CB825B5C62F00623D0C /* WebView.swift */,
+				04741CB925B5C62F00623D0C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04741CA425B5C5A900623D0C /* ContentView.swift in Sources */,
+				04741CBA25B5C62F00623D0C /* NetworkManager.swift in Sources */,
+				04741CBB25B5C62F00623D0C /* PostData.swift in Sources */,
+				04741CBE25B5C62F00623D0C /* ContentView.swift in Sources */,
+				04741CBD25B5C62F00623D0C /* WebView.swift in Sources */,
+				04741CBC25B5C62F00623D0C /* DetailView.swift in Sources */,
 				04741CA225B5C5A900623D0C /* H4X0R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PJY8L7LQY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -276,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.homel.project.H4X0R-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homel.project.Clima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PJY8L7LQY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -297,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.homel.project.H4X0R-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homel.project.Clima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
